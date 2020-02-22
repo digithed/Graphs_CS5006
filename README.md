@@ -1,3 +1,5 @@
-# Northeastern CS5006 Homework
+# Northeastern CS5006 Graphs Homework
 
-This repo is a collection of homeworks I am proud of from my algorithms course at Northeastern University.
+This repository contains a homework assignment from my algorithms class that I am particularly proud of. `main.c` creates an implementation of a directed cyclcic graph using the functions I wrote in the header file `my_graph.h`. The program is written in C and required knowledge of dynamic memory and memory allocation as well as being comfortable working with linked lists, queues, and traversal algorithms such as Breadth-First-Search (BFS) and Depth-First-Search (DFS).
+
+Besides the typical functions of a creating a graph in a program (pushing/removing nodes, pushing/removing edges, counting), `graph_print` conducts a BFS on the graph by creating root nodes with an "in-degree" of zero and branching outwards. Additionally, the graph allow flexibility in making it cyclic, as the `graph_add_edge` function accepts identical values for source and destination nodes and the function `has_cycle` uses a DFS to detect whether or not a cycle exists in the whole graph.
